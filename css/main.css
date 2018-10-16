@@ -61,13 +61,19 @@
 	width:1.5rem;    
 	height:4.1rem;    
 	float:left;    
-	margin-right:1.625rem;
+	margin-left:1.625rem;
 } 
-.ls2{  
-	float:left;    
-	margin-right:0.7rem;
-	margin-top: 1rem;
+.wc{
+	float:left; 
 }
+.ls2{  
+	position: absolute;
+	float:left;    
+	margin-right:1rem;
+	margin-top: 1rem;
+	color:#fff;
+}
+
 .ls3{    
 	width:1.5rem;    
 	height:3.4rem;    
@@ -79,24 +85,19 @@
 	width:1.5rem;    
 	height:4.1rem;    
 	float:left;    
-	margin-right:1.625rem;
-	margin-left: 0.5rem;
+	margin-left:2rem;
 }
 .lf{
 	margin-left: 4.5rem;
-}
-.lf2{
-	
-	margin:5.5rem 0 0 5rem;
 }
 .lf3{
 	margin:4.5rem 0 0 4.5rem;
 }
 .setting{
-	margin:2rem 0 0 11.5rem;
+	margin:15.5rem 0 0 13.5rem;
 }
 .setting2{
-	margin:3.6rem 0 0 11.5rem;
+	margin:3rem 0 0 13.5rem;
 }
 #container {
 	width: 100%;
@@ -106,4 +107,19 @@
 	margin-right:1.625rem;
 }
 #photo {float: left; width: 40%;}
-#content {float: right; width: 35%;} 
+#content {float: right; width: 35%;color:#fff;} 
+.outer-container{
+	width: 360px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+}
+.inner-container{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: -17px;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}

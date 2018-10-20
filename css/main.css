@@ -1,25 +1,121 @@
 
-#header
-	{
-		position: relative;
-		color: #fff;
-		text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
-		text-align: center;
-		margin: 0;
-		padding: 1em 0 1em 0;
-		cursor: default;
-	}
-#h
-			{
-				border-top: solid 1px rgba(255,255,255,0.5);
-			}	
-#h2
-			{
-				box-shadow: inset 0 0 0 1.5px #fff;
-				width: 100px;
-				height: 20px;
-				margin-left: 90px;
-			}	
+html, body 
+{
+		
+	position: relative;
+
+	height: 100%;
+
+}
+
+body {
+	rgin: 0;
+	dding: 0;
+}
+
+.swiper-container {
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.swiper-slide {		
+	/* Center slide text vertically */
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: -webkit-flex;
+
+    display: flex;
+    
+    -webkit-box-pack: center;
+    
+    -ms-flex-pack: center;
+    
+    -webkit-justify-content: center;
+    
+    justify-content: center;
+    
+    -webkit-box-align: center;
+    
+    -ms-flex-align: center;
+    
+    -webkit-align-items: center;
+    
+    align-items: center;
+
+}
+
+.swiper-pagination-bullet {
+	width: 20px;
+
+	height: 20px;
+	
+	text-align: center;
+	
+	line-height: 20px;
+	
+	font-size: 12px;
+	
+	color:#000;
+	
+	opacity: 1;
+	
+	background: rgba(0,0,0,0.2);
+
+}
+
+.swiper-pagination-bullet-active {
+
+	color:#fff;
+
+	background: #007aff;
+
+}
+
+.header
+{
+	position: relative;
+	color: #fff;
+	text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
+	text-align: center;
+	margin: 0;
+	padding: 1em 0 1em 0;
+	cursor: default;
+}
+.alert{
+	font-size: 18px;
+}
+.wc_count{
+	font-size: 20px;
+}
+.floor_subscriber
+{
+	border-top: solid 1px rgba(255,255,255,0.5);
+}	
+.sex_subscriber
+{
+	border-top: solid 1px rgba(255,255,255,0.5);
+}
+.company
+{
+	box-shadow: inset 0 0 0 1.5px #fff;
+	width: 100px;
+	height: 20px;
+	margin-left: 90px;
+}	
+.wc_more
+{
+	box-shadow: inset 0 0 0 1.5px #fff;
+	width: 220px;
+	height: 20px;
+	margin-left: 30px;
+	margin-top: 2rem;
+}
 .main_wrap{    
 	position: absolute; 
 	left: 0;    
@@ -29,35 +125,39 @@
 	width: 17.75rem;
 	height: 30rem;
 	background: #183026 url('../images/bg.jpg') no-repeat;
-	margin: 2.8rem auto 0;} 
-.menu{    
+	margin: 2.8rem auto 0;
+} 
+.lift_floor{
+	float: left;
+	margin-left: 1rem;
+	margin-right: 0.5rem;
+	color:#fff;
+}
+.floor_higher{    
 	width:17rem;    
 	height:0.1rem;    
 	margin:0 0 0 0;} 
-.menu ul{
+.floor_higher ul{
 	width:8.5rem;
 }
-.menu li{
+.floor_higher li{
 	list-style-type:none;         
 }
-.menu2 li{
+.floor_lower li{
 	list-style-type:none;         
 }
-.menu3 li{
+.cargo_lift li{
 	list-style-type:none;         
 }
-.menu4 li{
-	list-style-type:none;         
-}
-.menu_c{
+.wc_show{
 	width:17rem;    
 	height:3rem;    
 	margin:1rem 0 0 0;
 }
-.menu_c li{
+.wc_show li{
 	list-style-type:none;         
 }
-.ls{    
+.wc_icon{    
 	width:1.5rem;    
 	height:4.1rem;    
 	float:left;    
@@ -66,48 +166,42 @@
 .wc{
 	float:left; 
 }
-.ls2{  
+.wc_floor{  
 	position: absolute;
 	float:left;    
-	margin-right:1rem;
+	margin-right:0.5rem;
 	margin-top: 1rem;
 	color:#fff;
 }
 
-.ls3{    
+.repair_lift{    
 	width:1.5rem;    
 	height:3.4rem;    
 	float:left;    
 	margin-right:1.625rem;
 	margin-top: 0.6rem;
 } 
-.ls4{
+.repair_wc{
 	width:1.5rem;    
 	height:4.1rem;    
 	float:left;    
 	margin-left:2rem;
 }
-.lf{
-	margin-left: 4.5rem;
+.setting_lift{
+	margin:13.5rem 0 0 13.5rem;
 }
-.lf3{
-	margin:4.5rem 0 0 4.5rem;
+.setting_wc{
+	margin:0.2rem 0 0 13.5rem;
 }
-.setting{
-	margin:15.5rem 0 0 13.5rem;
-}
-.setting2{
-	margin:3rem 0 0 13.5rem;
-}
-#container {
+.container {
 	width: 100%;
 	width:1.5rem;    
 	height:4.1rem;    
 	float:left;    
 	margin-right:1.625rem;
 }
-#photo {float: left; width: 40%;}
-#content {float: right; width: 35%;color:#fff;} 
+.content {float: right; width: 35%;color:#fff;} 
+.director {float: left; width: 40%;}
 .outer-container{
 	width: 360px;
 	height: 200px;

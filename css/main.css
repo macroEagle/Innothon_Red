@@ -47,6 +47,7 @@ body {
     -webkit-align-items: center;
     
     align-items: center;
+	
 
 }
 
@@ -191,7 +192,7 @@ body {
 	margin:13.5rem 0 0 13.5rem;
 }
 .setting_wc{
-	margin:0.2rem 0 0 13.5rem;
+	margin:3.3rem 0 0 13.5rem;
 }
 .container {
 	width: 100%;
@@ -203,10 +204,9 @@ body {
 .content {float: right; width: 35%;color:#fff;} 
 .director {float: left; width: 40%;}
 .outer-container{
-	width: 360px;
+	width: 260px;
 	height: 200px;
 	position: relative;
-	overflow: hidden;
 }
 .inner-container{
 	position: absolute;
@@ -215,5 +215,8 @@ body {
 	right: -17px;
 	bottom: 0;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: scroll;	
+}
+.wc_icon_s{
+	display:none;
 }

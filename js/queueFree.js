@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){	
 	setInterval(function working(){ 
 		changeLiftNumber();
 		switchLiftImage();
@@ -74,13 +74,12 @@ $(document).ready(function(){
 	{
 		var wc1 = $('.wc1').attr("src");
 		var wc2 = $('.wc2').attr("src");
-		var wc3 = $('.wc3').attr("src");
 		
 		if("images/wc_green.png" == wc1){
-			$('.wc1').attr('src','images/wc_red.png');	
+			$('.wc1').attr('src','images/wc_red.png');		
 			$('.wc_count').html("One toilet is avaliable.") 
 		}else{
-			$('.wc1').attr('src','images/wc_green.png');
+			$('.wc1').attr('src','images/wc_green.png');			
 			$('.wc_count').html("Three toilets are avaliable.") 
 		}
 		
@@ -88,14 +87,7 @@ $(document).ready(function(){
 			$('.wc2').attr('src','images/wc_red.png');			
 		}else{
 			$('.wc2').attr('src','images/wc_green.png');
-		}
-		
-		if("images/wc2_red.png" == wc3){
-			$('.wc3').attr('src','images/wc2_green.png');			
-		}else{
-			$('.wc3').attr('src','images/wc2_red.png');
-		}
-		
+		}		
 	}
 });
 

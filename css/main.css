@@ -88,46 +88,51 @@ body {
 	padding: 1em 0 1em 0;
 	cursor: default;
 }
+
 .alert{
-	font-size: 18px;
+	font-size: 20px;	
+	-webkit-text-stroke: 1px white;
+	letter-spacing: 0.03em;
 }
 .wc_count{
 	font-size: 20px;
+	-webkit-text-stroke: 1px white;
+	letter-spacing: 0.03em;
+	margin-top: 55px;
 }
 .floor_subscriber
 {
 	border-top: solid 1px rgba(255,255,255,0.5);
+	-webkit-text-stroke: 0.3px white;
+	letter-spacing: 0.03em;
 }	
 .sex_subscriber
 {
 	border-top: solid 1px rgba(255,255,255,0.5);
+	-webkit-text-stroke: 0.3px white;
+	letter-spacing: 0.03em;
 }
 .company
 {
 	box-shadow: inset 0 0 0 1.5px #fff;
 	width: 100px;
-	height: 20px;
-	margin-left: 90px;
+	height: 20px;	
+	margin-left: 575px;
 }	
-.wc_more
-{
-	box-shadow: inset 0 0 0 1.5px #fff;
-	width: 220px;
-	height: 20px;
-	margin-left: 30px;
-	margin-top: 2rem;
-}
 .main_wrap{    
 	position: absolute; 
 	left: 0;    
 	right: 0;    
 	top: 0;    
 	bottom: 0; 
-	width: 17.75rem;
-	height: 30rem;
 	background: #183026 url('../images/bg.jpg') no-repeat;
-	margin: 2.8rem auto 0;
+	margin: 0 auto 0;
 } 
+.main_container{
+	width: 270px;
+	height: 200px;
+	position: relative;
+}
 .lift_floor{
 	float: left;
 	margin-left: 1rem;
@@ -152,7 +157,7 @@ body {
 }
 .wc_show{
 	width:17rem;    
-	height:3rem;    
+	height:4rem;    
 	margin:1rem 0 0 0;
 }
 .wc_show li{
@@ -189,10 +194,10 @@ body {
 	margin-left:2rem;
 }
 .setting_lift{
-	margin:13.5rem 0 0 13.5rem;
+	margin:17.5rem 0 0 13.5rem;
 }
 .setting_wc{
-	margin:3.3rem 0 0 13.5rem;
+	margin:2.5rem 0 0 13.5rem;
 }
 .container {
 	width: 100%;
@@ -204,9 +209,10 @@ body {
 .content {float: right; width: 35%;color:#fff;} 
 .director {float: left; width: 40%;}
 .outer-container{
-	width: 260px;
+	width: 270px;
 	height: 200px;
 	position: relative;
+	margin-left: 470px;
 }
 .inner-container{
 	position: absolute;
@@ -216,6 +222,12 @@ body {
 	bottom: 0;
 	overflow-x: hidden;
 	overflow-y: scroll;	
+}
+.lift-container{
+	width: 270px;
+	height: 200px;
+	position: relative;
+	margin-left: 490px;
 }
 .wc_icon_s{
 	display:none;

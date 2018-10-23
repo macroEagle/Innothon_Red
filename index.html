@@ -4,12 +4,14 @@
 	<!--设置视口,解决pc和手机屏幕不匹配问题-->    
 	<meta name="viewport" content="width=device-width,     
 	initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
-	<head>
-		<link rel="stylesheet" href="css/main.css" />
+	<head>		
 		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/main.css" />
 		<script src="js/swiper.min.js"></script>
-		<script src="js/jquery.min.js"></script>
-		<script src="js/queueFree.js"></script>
+		<script src="js/jquery.min.js"></script>	
+		<script src="js/jquery.slimscroll.min.js"></script>
+		<script src="js/queueFree.js"></script>	
+		
 	</head>
 	<body>
 		<div class="swiper-container">		
@@ -18,13 +20,13 @@
 					<div class="main_wrap">
 						<section class="header">
 							<header>
-								<p class = "alert" id = "lift_up_mins">Lift are up available in 1 mins.</p>
-								<p class = "alert" id = "lift_down_mins">Lift are down available in 3 mins.</p>
+								<p class = "alert" id = "lift_up_mins">Lift are up available in 1 mins</p>
+								<p class = "alert" id = "lift_down_mins">Lift are down available in 3 mins</p>
 								<p class = "floor_subscriber">You are in 25F</p>
 								<p class = "company">TKO OT2</p>
 							</header>
 						</section>
-						<div>
+						<div class = "lift-container">
 							<p class="lift_floor">21F~</p>
 							<ul class="floor_higher">
 								<li>
@@ -84,7 +86,7 @@
 									<img src="images/lift_red.png" width="30" height="30" class = "cave3"/>
 								</div>																
 								</li>
-								<li class ="repair_lift"><img src="images/repair.jpg" width="30" height="40"/></li>
+								<li class ="repair_lift"><img src="images/repair_lift.jpg" width="30" height="40"/></li>
 								<li>
 								<div class="container">
 									<div class="director">
@@ -153,18 +155,19 @@
 									<img src="images/lift_red.png" width="30" height="30" class = "cave3"/>
 								</div>																
 								</li>
-							</ul>								
+							</ul>		
+							<div class = "setting_lift">
+								<img src="images/set.png" width="50" height="50"/>
+							</div>						
 						</div>	
-						<div class = "setting_lift">
-							<img src="images/set.png" width="50" height="50"/>
-						</div>
+						
 					</div>	
 				</div>
 				<div class="swiper-slide">
 					<div class="main_wrap">
 						<section class="header">
 							<header>
-								<p class = "wc_count">Three toilets are avaliable.</p>
+								<p class = "wc_count">Three toilets are avaliable</p>
 								<p class = "sex_subscriber">Male</p>
 								<p class = "company">TKO OT2</p>						
 							</header>
@@ -185,7 +188,7 @@
 								<div class="wc">
 									<li class ="wc_icon"><img src="images/wc_red.png" width="40" height="40" class = "wc2"/></li>
 									<li class ="wc_icon"><img src="images/wc_green.png" width="40" height="40" class = "wc1"/></li>
-									<li class ="wc_icon"><img src="images/wc_red.png" width="40" height="40" class = "wc2"/></li>
+									<li class ="wc_icon"><img src="images/repair_wc.png" width="40" height="40" class = "wc3"/></li>
 									<li class ="wc_icon"><img src="images/wc_green.png" width="40" height="40" class = "wc1"/></li>			
 								</div>															
 							</ul>
@@ -244,10 +247,11 @@
 								</div>															
 							</ul>
 						</div>	
-						</div>
 						<div class = "setting_wc">
 							<img src="images/set.png" width="50" height="50"/>
-						</div>								
+						</div>
+						</div>
+														
 					</div>				
 				</div>
 			</div>
@@ -258,23 +262,12 @@
 
 	    var swiper = new Swiper('.swiper-container', {
 	
-	      pagination: {
-	
-	        el: '.swiper-pagination',
-	
-	        clickable: true,
-	
-	        renderBullet: function (index, className) {
-	
-	          return '<span class="' + className + '">' + (index + 1) + '</span>';
-	
-	        },
-	
+	      pagination: {	
+	        el: '.swiper-pagination'
 	      },
 	
 	    });
 	
 	  </script>
-	
 	</body>
 </html>

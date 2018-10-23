@@ -8,7 +8,7 @@ $(document).ready(function(){
 		changeLiftNumber();
 		switchLiftImage();
 		switchWcImage();	
-	},5000);
+	},10000);
 	
 	function changeLiftNumber(){
 		max = 27

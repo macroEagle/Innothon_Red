@@ -85,7 +85,7 @@ body {
 	text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 	text-align: center;
 	margin: 0;
-	padding: 1em 0 1em 0;
+	padding: 1em 0 0 0;
 	cursor: default;
 }
 
@@ -98,7 +98,7 @@ body {
 	font-size: 20px;
 	-webkit-text-stroke: 1px white;
 	letter-spacing: 0.03em;
-	margin-top: 55px;
+	margin-top: 66.5px;
 }
 .floor_subscriber
 {
@@ -117,8 +117,21 @@ body {
 	box-shadow: inset 0 0 0 1.5px #fff;
 	width: 100px;
 	height: 20px;	
-	margin-left: 575px;
+	color:#fff;
+	text-align: center;
+	margin-left: 80px;
+	margin-bottom: 40px;
 }	
+.company_wc
+{
+	box-shadow: inset 0 0 0 1.5px #fff;
+	width: 100px;
+	height: 20px;	
+	color:#fff;
+	text-align: center;
+	margin-left: 100px;
+	margin-bottom: 40px;
+}
 .main_wrap{    
 	position: absolute; 
 	left: 0;    
@@ -194,10 +207,10 @@ body {
 	margin-left:2rem;
 }
 .setting_lift{
-	margin:17.5rem 0 0 13.5rem;
+	margin:17.5rem 0 0 13rem;
 }
 .setting_wc{
-	margin:2.5rem 0 0 13.5rem;
+	margin:1.8rem 0 0 13.5rem;
 }
 .container {
 	width: 100%;
@@ -212,7 +225,7 @@ body {
 	width: 270px;
 	height: 200px;
 	position: relative;
-	margin-left: 470px;
+	left:38%;
 }
 .inner-container{
 	position: absolute;
@@ -227,7 +240,7 @@ body {
 	width: 270px;
 	height: 200px;
 	position: relative;
-	margin-left: 490px;
+	left:40%;
 }
 .wc_icon_s{
 	display:none;

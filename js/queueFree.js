@@ -87,8 +87,8 @@ $(document).ready(function(){
 				.queue(function(next){$(this).attr('src','images/lift_green.png');next();$(this).dequeue()})
 				.fadeIn(1000);
 			
-			$('#lift_up_mins').html("Lift are up available in 2 mins") 
-			$('#lift_down_mins').html("Lift are down available in 4 mins") 
+			$('#lift_up_mins').html("Lift is up available in 2 mins") 
+			$('#lift_down_mins').html("Lift is down available in 4 mins") 
 		}else{
 			$('.img_arrow1')
 				.fadeOut(1000)				
@@ -100,8 +100,8 @@ $(document).ready(function(){
 				.queue(function(next){$(this).attr('src','images/lift_red.png');next();$(this).dequeue()})
 				.fadeIn(1000);
 				
-			$('#lift_up_mins').html("Lift are up available in 1 mins") 
-			$('#lift_down_mins').html("Lift are down available in 3 mins") 
+			$('#lift_up_mins').html("Lift is up available in 1 mins") 
+			$('#lift_down_mins').html("Lift is down available in 3 mins") 
 		}
 		
 		if("images/down_green.png" == img_arrow2){
@@ -177,13 +177,13 @@ $(document).ready(function(){
 	{
 		var wc1 = $('.wc1').attr("src");
 		var wc2 = $('.wc2').attr("src");
-		
+		$('.wc_maintain').fadeOut(1000).fadeIn(1000);
 		if("images/wc_green.png" == wc1){	
 			$('.wc1')
 				.fadeOut(1000)				
 				.queue(function(next){$(this).attr('src','images/wc_red.png');next();$(this).dequeue()})
 				.fadeIn(1000);
-			$('.wc_count').html("One toilet is avaliable") 
+			$('.wc_count').html("Two toilets are avaliable") 
 		}else{
 			$('.wc1')
 				.fadeOut(1000)

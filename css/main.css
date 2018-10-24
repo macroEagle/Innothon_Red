@@ -225,7 +225,7 @@ body {
 	width: 270px;
 	height: 200px;
 	position: relative;
-	left:8%;
+	left:3%;
 }
 .inner-container{
 	position: absolute;
@@ -240,7 +240,7 @@ body {
 	width: 270px;
 	height: 200px;
 	position: relative;
-	left:16%;
+	left:11%;
 }
 .wc_icon_s{
 	display:none;

@@ -98,7 +98,7 @@ body {
 	font-size: 20px;
 	-webkit-text-stroke: 1px white;
 	letter-spacing: 0.03em;
-	margin-top: 66.5px;
+	margin-top: 65px;
 }
 .floor_subscriber
 {
@@ -207,10 +207,10 @@ body {
 	margin-left:2rem;
 }
 .setting_lift{
-	margin:17.5rem 0 0 13rem;
+	margin:15.5rem 0 0 13rem;
 }
 .setting_wc{
-	margin:1.8rem 0 0 13.5rem;
+	margin:0 0 0 13.5rem;
 }
 .container {
 	width: 100%;
@@ -225,7 +225,7 @@ body {
 	width: 270px;
 	height: 200px;
 	position: relative;
-	left:38%;
+	left:29%;
 }
 .inner-container{
 	position: absolute;
@@ -240,7 +240,7 @@ body {
 	width: 270px;
 	height: 200px;
 	position: relative;
-	left:40%;
+	left:31%;
 }
 .wc_icon_s{
 	display:none;

@@ -202,7 +202,6 @@ $(document).ready(function(){
 				.queue(function(next){$(this).attr('src','images/wc_green.png');next();$(this).dequeue()})
 				.fadeIn(1000);
 		}	
-		$('.wc3').fadeOut(1000).fadeIn(1000);
 	}
 	
 });

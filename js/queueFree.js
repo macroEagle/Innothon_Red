@@ -177,7 +177,6 @@ $(document).ready(function(){
 	{
 		var wc1 = $('.wc1').attr("src");
 		var wc2 = $('.wc2').attr("src");
-		$('.wc_maintain').fadeOut(1000).fadeIn(1000);
 		if("images/wc_green.png" == wc1){	
 			$('.wc1')
 				.fadeOut(1000)				

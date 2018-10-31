@@ -10,7 +10,7 @@
 		<script src="js/swiper.min.js"></script>
 		<script src="js/jquery.min.js"></script>	
 		<script src="js/jquery.slimscroll.min.js"></script>
-		<script src="js/queueFree.js"></script>
+		<script src="js/queueFree.js"></script>	
 		
 	</head>
 	<body>
@@ -18,21 +18,15 @@
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">	
 					<div class="main_wrap">
-						<div class="setting">
-							<p class="company">OT2</p>
-							<p class="floor">25F</p>
-							<img src="images/female.png" width="30" height="30" class = "setting-sex"/>				
-						</div>
-						<div class="time-container">
-							<img src="images/arrow_up.png" width="25" height="25" class = "arrow-up"/>	
-							<p class="time">5</p>
-							<p class="min">mins</p>						
-							<p class="arrive">Arriving in</p>
-							<img src="images/arrow_down.png" width="25" height="25" class = "arrow-down"/>
-							<p class="time">3</p>
-							<p class="min">mins</p>
-						</div>
+						<section class="header">
+							<header>
+								<p class = "alert" id = "lift_up_mins">Lift is up available in 1 mins</p>
+								<p class = "alert" id = "lift_down_mins">Lift is down available in 3 mins</p>
+								<p class = "floor_subscriber">You are on 25F</p>								
+							</header>
+						</section>
 						<div class = "lift-container">
+							<p class = "company">TKO OT2</p>
 							<p class="lift_floor">21F~</p>
 							<ul class="floor_higher">
 								<li>
@@ -84,7 +78,7 @@
 								</div>									
 								</li>
 								<li>
-								<div class="container-s">
+								<div class="container">
 									<div class="director">
 										<img src="images/down_red.png" width="15" height="15" class = "img_arrow3"/>				
 									</div>
@@ -92,7 +86,7 @@
 									<img src="images/lift_red.png" width="30" height="30" class = "cave3"/>
 								</div>																
 								</li>
-								<li class ="repair_lift"><img src="images/repair_lift.png" width="45" height="45"/></li>
+								<li class ="repair_lift"><img src="images/repair_lift.jpg" width="30" height="40"/></li>
 								<li>
 								<div class="container">
 									<div class="director">
@@ -161,18 +155,25 @@
 									<img src="images/lift_red.png" width="30" height="30" class = "cave3"/>
 								</div>																
 								</li>
-							</ul>							
-						</div>				
+							</ul>		
+							<div class = "setting_lift">
+								<img src="images/set.png" width="50" height="50"/>
+							</div>						
+						</div>	
+						
 					</div>	
 				</div>
 				<div class="swiper-slide">
 					<div class="main_wrap">
-						<div class="setting">
-							<p class="company">OT2</p>
-							<p class="floor">25F</p>
-							<img src="images/female.png" width="30" height="30" class = "setting-sex"/>				
-						</div>
+						<section class="header">
+							<header>
+								<p class = "wc_count">Three toilets are avaliable</p>
+								<p class = "sex_subscriber">Male</p>
+													
+							</header>
+						</section>	
 						<div class="outer-container">
+							<p class = "company_wc">TKO OT2</p>	
 							<div class="inner-container">
 							<ul class="wc_show">
 								<li class ="wc_floor">25F</li>
@@ -188,7 +189,7 @@
 								<div class="wc">
 									<li class ="wc_icon"><img src="images/wc_red.png" width="40" height="40" class = "wc_maintain"/></li>
 									<li class ="wc_icon"><img src="images/wc_red.png" width="40" height="40" class = "wc2"/></li>
-									<li class ="wc_icon"><img src="images/wc_green.png" width="40" height="40" class = "wc3"/></li>
+									<li class ="wc_icon"><img src="images/repair_wc.png" width="40" height="40" class = "wc3"/></li>
 									<li class ="wc_icon"><img src="images/wc_green.png" width="40" height="40" class = "wc_maintain"/></li>			
 								</div>															
 							</ul>
@@ -198,7 +199,7 @@
 									<li class ="wc_icon"><img src="images/wc_red.png" width="40" height="40" class = "wc_maintain"/></li>
 									<li class ="wc_icon"><img src="images/wc_green.png" width="40" height="40" class = "wc_maintain"/></li>
 									<li class ="wc_icon"><img src="images/wc_green.png" width="40" height="40" class = "wc1"/></li>
-									<li class ="wc_icon"><img src="images/repair_wc.png" width="40" height="40" class = "wc_maintain"/></li>										
+									<li class ="wc_icon"><img src="images/wc_red.png" width="40" height="40" class = "wc_maintain"/></li>										
 								</div>															
 							</ul>
 							<ul class="wc_show">
@@ -247,6 +248,9 @@
 								</div>															
 							</ul>
 						</div>	
+						<div class = "setting_wc">
+							<img src="images/set.png" width="50" height="50"/>
+						</div>
 						</div>
 														
 					</div>				

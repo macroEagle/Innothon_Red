@@ -66,22 +66,18 @@ body {
 	
 	opacity: 1;
 	
-	background: rgba(0,0,0,0.2);
+	background: rgba(0,0,0,0);
 
 }
 
 .swiper-pagination-bullet-active {
-
-	color:#fff;
-
-	background: #007aff;
 
 }
 
 .header
 {
 	position: relative;
-	color: #fff;
+	color: #19372F;
 	text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
 	text-align: center;
 	margin: 0;
@@ -112,35 +108,15 @@ body {
 	-webkit-text-stroke: 0.3px white;
 	letter-spacing: 0.03em;
 }
-.company-before
-{
-	box-shadow: inset 0 0 0 1.5px #fff;
-	width: 100px;
-	height: 20px;	
-	color:#fff;
-	text-align: center;
-	margin-left: 80px;
-	margin-bottom: 40px;
-}	
-.company_wc
-{
-	box-shadow: inset 0 0 0 1.5px #fff;
-	width: 100px;
-	height: 20px;	
-	color:#fff;
-	text-align: center;
-	margin-left: 100px;
-	margin-bottom: 40px;
-}
 .main_wrap{    
 	position: absolute; 
 	left: 0;    
 	right: 0;    
 	top: 0;    
 	bottom: 0; 
-	background: url('../images/bg.PNG') repeat;
+	background: url('../images/bg.jpg') no-repeat;
+	background-size: 22.5rem 35rem;
 	margin: 0 auto 0;
-	width: 25rem;
 } 
 .main_container{
 	width: 270px;
@@ -151,7 +127,9 @@ body {
 	float: left;
 	margin-left: 1rem;
 	margin-right: 0.5rem;
-	color:#fff;
+	color:#19372F;
+	margin-top: 1.8rem;
+	font-family: Arial;
 }
 .floor_higher{    
 	width:17rem;    
@@ -172,14 +150,14 @@ body {
 .wc_show{
 	width:17rem;    
 	height:2rem;    
-	margin:3rem 0 0 0;
+	margin:2.8rem 0 0 0;
 }
 .wc_show li{
 	list-style-type:none;         
 }
 .wc_icon{    
 	width:1.5rem;    
-	height:2.1rem;    
+	height:2rem;    
 	float:left;    
 	margin-left:1.625rem;
 } 
@@ -191,19 +169,20 @@ body {
 	float:left;    
 	margin-right:0.5rem;
 	margin-top: 1rem;
-	color:#fff;
+	color:#19372F;
+	font-family: Arial;
 }
 
 .repair_lift{    
 	width:1.5rem;    
 	height:3.4rem;    
 	float:left;    
-	margin-right:2.2rem;
-	margin-top: 0.3rem;
+	margin-right:1.5rem;
+	margin-top: 0.8rem;
 } 
 .repair_wc{
 	width:1.5rem;    
-	height:4.1rem;    
+	height:2rem;    
 	float:left;    
 	margin-left:2rem;
 }
@@ -218,17 +197,16 @@ body {
 	width:1.5rem;    
 	height:4.1rem;    
 	float:left;    
-	margin-right:1.625rem;
+	margin-right:1.7rem;
+	margin-bottom: 0.5rem;
 }
-.container-s {
-	width: 100%;
-	width:1.5rem;    
-	height:4.1rem;    
-	float:left;    
-	margin-right:1rem;
-}
-.content {float: right; width: 35%;color:#fff;} 
-.director {float: left; width: 40%;}
+.content {
+	float: right; 
+	width: 25%;
+	color:#19372F;
+	font-family: Arial;
+} 
+.director {float: left; width: 50%;}
 .outer-container{
 	width: 300px;
 	height: 300px;
@@ -253,71 +231,106 @@ body {
 .wc_icon_s{
 	display:none;
 }
+
 .setting{
+	margin-top: 1rem;
+	width:22rem;
 }
 .company{
 	float: left;
-	color:#fff;
-	margin-left: 2rem;
+	color: #19372F;
+	margin-left: 2.5rem;
 	margin-top: 2rem;
 	font-family: Arial;
 	margin-top: 2.5rem;
 }
 .floor{
 	float: left;
-	color:#fff;
+	color:#19372F;
 	margin-left: 5.5rem;
 	font-size: 30px;
 	font-family: Arial;
 }
 .setting-sex{
 	float: left;
-	margin-left: 6rem;
+	margin-left: 5rem;
 	margin-top: 2rem;
+}
+.count-queue{
+	float: left;
+}
+.count-person{
+	float: left;
+	color:#19372F;	
+	font-size: 25px;
+	font-family: Arial;
+	margin-top: 5rem;
+	margin-left: -9rem;
+}
+.count-desc{
+	float: left;
+	margin-left: 8.8rem;
+	margin-top: -2rem;
+	font-family: Arial;
+	color:#19372F;	
 }
 .time-container{
 	float: left;	
-	margin-left: 2rem;
-	margin-bottom: 0.8rem;
+	margin-left: 2rem;	
+	margin-top: -2.5rem;
+	margin-bottom: -1rem;
 }
 .arrow-up{
 	float: left;
-	margin-top: 1.5rem;
-}
-.time{
-	float: inherit;
-	color:red;
-	font-size: 25px;
-	font-family: Arial;
-	margin-left: 0.2rem;
-	
-}
-.min{
-	float: left;
-	color: red;	
-	margin-left: 0.2rem;
-	margin-top: 2rem;	
-}
-.arrive{
-	float: left;
-	color:#fff;
-	font-family: Arial;
-	margin-left: 2.5rem;
 	margin-top: 2rem;
 }
 .arrow-down{
 	float: left;
-	margin-top: 1.5rem;
-	margin-left: 2.7rem;
+	margin-top: 2rem;
+	margin-left: 1rem;
 }
+.time{
+	float: inherit;
+	color:#19372F;
+	font-size: 35px;
+	font-family: Arial;
+	margin-left: 0.2rem;	
+	font-family: Arial;
+	margin-top: 1.4rem;
+}
+.min{
+	float: left;
+	color: #19372F;	
+	margin-left: 0.2rem;
+	margin-top: 2rem;	
+	font-family: Arial;
+}
+.arrive{
+	float: left;
+	color:#19372F;
+	font-family: Arial;
+	margin-left: 1.4rem;
+	margin-top: 2rem;
+}
+
 .time-down{
-	color:red;
+	color:#19372F;
 	float: left;
 	font-size: 25px;
 	font-family: Arial;
 	margin-left: 0.2rem;
 }
 .min-down{
-	color: red;
+	color: #19372F;
 	float: left;	
+}
+.page{
+	float: left;
+	margin-top: 4.8rem;
+	margin-left: -1.5rem;
+}
+.page-wc{
+	float:left;
+	margin-top:30rem;
+	margin-left: -12rem;
 }

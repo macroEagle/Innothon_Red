@@ -1,0 +1,26 @@
+server:
+  port: 8090
+  servlet-path: /
+
+management.security.enabled: false
+
+#http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-reday-endpoints
+endpoints:
+  enabled:  false
+  beans:
+    enabled: true
+  info:
+    enabled: true
+  health:
+    enabled: true
+  metrics:
+    enabled: true
+
+#if ehcache config file is locate in a folder other than the root of the classpath ==> spring.cache.ehcache.config=classpath:config/another-config.xml
+
+# app name and build version updated during build process from Maven properties.
+info:
+  app:
+    name: @project.artifactId@
+  build:
+    version: @project.version@

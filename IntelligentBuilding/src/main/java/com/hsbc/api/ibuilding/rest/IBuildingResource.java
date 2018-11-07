@@ -31,7 +31,7 @@ public class IBuildingResource {
 	public String getToiletStatus (@PathVariable (value ="number") String number) {
 		String result;
 		String status;
-		System.out.println("Number " + number + "====toiletoneStatus:" + toiletoneStatas + "===toiletTwoStatus:" + toiletTwoStatus);
+		System.out.println("Number " + number + "====toiletoneStatus:" + toiletOneStatus + "===toiletTwoStatus:" + toiletTwoStatus);
 
 		if ("1".equals (number)){
 			status = toiletOneStatus;

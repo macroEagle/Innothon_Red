@@ -62,8 +62,8 @@
          <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
-			<executable>true</executable>
             <configuration>
+			   <executable>true</executable>
                <layout>JAR</layout>
                <mainClass>com.hsbc.api.ibuilding.main.IBuildingRestApplication</mainClass>
             </configuration>

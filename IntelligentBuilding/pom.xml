@@ -4,8 +4,8 @@
    <groupId>com.hsbc.rt</groupId>
    <artifactId>hsbc-api-ibullding</artifactId>
    <version>0-SNAPSHOT</version>
-   <!--packaging>jar</packaging-->
-   <packaging>war</packaging>
+   <packaging>jar</packaging>
+   <!--packaging>war</packaging-->
    <name>hsba-api-ibuilding</name>
    <description>HSBC Intelligent Building</description>
    <parent>
@@ -61,6 +61,10 @@
          <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+               <layout>JAR</layout>
+               <mainClass>com.hsbc.api.ibuilding.main.IBuildingRestApplication</mainClass>
+            </configuration>
          </plugin>
       </plugins>
    </build>

@@ -93,7 +93,7 @@ $(document).ready(function(){
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max-min+1)+min,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 		$('#f2')
-			.fadeOut(1000)				
+			.fadeOut(1000)
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max-min+1)+min,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 		$('#f3')
@@ -109,7 +109,7 @@ $(document).ready(function(){
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max2-min2+1)+min2,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 		$('#f6')
-			.fadeOut(1000)				
+			.fadeOut(1000)
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max2-min2+1)+min2,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 		$('#f7')
@@ -125,7 +125,7 @@ $(document).ready(function(){
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max2-min2+1)+min2,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 		$('#f10')
-			.fadeOut(1000)				
+			.fadeOut(1000)
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max2-min2+1)+min2,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 		$('#f11')
@@ -137,7 +137,7 @@ $(document).ready(function(){
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max-min2+1)+min2,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 		$('#f13')
-			.fadeOut(1000)				
+			.fadeOut(1000)
 			.queue(function(next){$(this).html(parseInt(Math.random()*(max-min2+1)+min2,10));next();$(this).dequeue()})
 			.fadeIn(1000);
 	}
@@ -242,7 +242,6 @@ $(document).ready(function(){
 				.queue(function(next){$(this).attr('src','images/lift_green.png');next();$(this).dequeue()})
 				.fadeIn(1000);
 		}
-		$('.repair_lift').fadeOut(1000).fadeIn(1000);
 		
 	}
 	

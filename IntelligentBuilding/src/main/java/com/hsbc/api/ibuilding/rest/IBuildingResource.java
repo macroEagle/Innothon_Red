@@ -27,7 +27,7 @@ public class IBuildingResource {
 		return result;
 	}
 
-	@RequestMapping (value = "/toilet/ {number}"，method = RequestMethod.GET)
+	@RequestMapping (value = "/toilet/ {number}",method = RequestMethod.GET)
 	public String getToiletStatus (@PathVariable (value ="number") String number) {
 		String result;
 		String status;
@@ -38,7 +38,7 @@ public class IBuildingResource {
 		}else if ("2".equals (number)) {
 			status = toiletTwoStatus;
 		}else {
-			statuse "O";
+			statuse "0";
 		}
 
 		result = status;

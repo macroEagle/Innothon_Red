@@ -38,7 +38,7 @@ public class IBuildingResource {
 		}else if ("2".equals (number)) {
 			status = toiletTwoStatus;
 		}else {
-			statuse "0";
+			status = "0";
 		}
 
 		result = status;

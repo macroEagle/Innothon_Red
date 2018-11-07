@@ -25,7 +25,7 @@ $(document).ready(function(){
 	
 	function fetchTDataAjax(number){
 		$.ajax({
-			url:"http://localhost:8090/api/toilet/" + number,
+			url:"http://207.246.95.229:8090/api/toilet/" + number,
 			type:"GET",
 			success:function(data){
 				if("1"==number.toString()){
@@ -67,7 +67,7 @@ $(document).ready(function(){
 	function fetchLDataAjax(){
 
 		$.ajax({
-			url:"http://localhost:8090/api/lift",
+			url:"http://207.246.95.229:8090/api/lift",
 			type:"GET",
 			success:function(data){
 				if(null != data.toString() && "" != data.toString() && data.toString() != $(".count-person").text() ){
@@ -280,7 +280,7 @@ $(document).ready(function(){
 	//For Test.html
 		function setToiletOneOpen(){
     		$.ajax({
-    			url:"http://localhost:8090/api/toilet/1/0",
+    			url:"http://207.246.95.229:8090/api/toilet/1/0",
     			type:"GET",
     			success:function(data){
     			}
@@ -288,7 +288,7 @@ $(document).ready(function(){
     	}
     	function setToiletOneClose(){
     		$.ajax({
-    			url:"http://localhost:8090/api/toilet/1/1",
+    			url:"http://207.246.95.229:8090/api/toilet/1/1",
     			type:"GET",
     			success:function(data){
     			}
@@ -296,7 +296,7 @@ $(document).ready(function(){
     	}
     	function setToiletTwoOpen(){
     		$.ajax({
-    			url:"http://localhost:8090/api/toilet/2/0",
+    			url:"http://207.246.95.229:8090/api/toilet/2/0",
     			type:"GET",
     			success:function(data){
     			}
@@ -304,7 +304,7 @@ $(document).ready(function(){
     	}
     	function setToiletTwoClose(){
     		$.ajax({
-    			url:"http://localhost:8090/api/toilet/2/1",
+    			url:"http://207.246.95.229:8090/api/toilet/2/1",
     			type:"GET",
     			success:function(data){
     			}
@@ -325,7 +325,7 @@ $(document).ready(function(){
 
 	function setQueueCount(number){
 		$.ajax({
-			url:"http://localhost:8090/api/lift/" + number,
+			url:"http://207.246.95.229:8090/api/lift/" + number,
 			type:"GET",
 			success:function(data){
 			}

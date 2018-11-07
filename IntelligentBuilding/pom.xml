@@ -56,11 +56,13 @@
       </dependency>
    </dependencies>
    <build>
+		<finalName>red</finalName>
       <plugins>
          <!-- Package as an executable jar/ war -->
          <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+			<executable>true</executable>
             <configuration>
                <layout>JAR</layout>
                <mainClass>com.hsbc.api.ibuilding.main.IBuildingRestApplication</mainClass>

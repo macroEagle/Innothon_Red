@@ -61,10 +61,10 @@ public class IBuildingResource {
 
 	//obsolet method
 	@PostMapping("/toilet")
-	public object setStatus(
+	public Object setStatus(
 		@Valid
 		@RequestBody
-		final object requestobject) {
+		final Object requestobject) {
 	
 		String result = "toilet status change to" + requestobject.toString();  
 		return result;

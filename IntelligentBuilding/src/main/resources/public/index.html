@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html>
+	<meta charset="UTF-8">    
+	<!--设置视口,解决pc和手机屏幕不匹配问题-->    
+	<meta name="viewport" content="width=device-width,     
+	initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+	<head>		
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/swiper.min.js"></script>
+		<script src="js/jquery.min.js"></script>	
+		<script src="js/jquery.slimscroll.min.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/queueFree.js"></script>
+	</head>
+	<body>
+		<div class="swiper-container">		
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">	
+					<div class="main_wrap">
+						<div class="setting">
+							<p class="company">OT2</p>
+							<p class="floor">25F</p>
+							<img src="images/female.png" width="30" height="30" class = "setting-sex"/>				
+						</div>						
+						<div class="count-queue">
+							<p class="count-person">8</p>
+							
+						</div>
+						<div >
+							<p class="count-desc">ppl in queue</p>
+						</div>
+						<div class="time-container">
+							<img src="images/arrow_up.png" width="23" height="23" class = "arrow-up"/>	
+							<p class="time">5</p>
+							<p class="min">mins</p>						
+							<p class="arrive">Lift Arriving in</p>
+							<img src="images/arrow_down.png" width="23" height="23" class = "arrow-down"/>
+							<p class="time">3</p>
+							<p class="min">mins</p>
+						</div>
+						<div class = "lift-container">
+							<p class="lift_floor">21F~</p>
+							<ul class="floor_higher">
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/up_red.png" width="20" height="20" class = "img_arrow1"/>				
+									</div>
+									<div class="content" id="f1">21</div>
+									<div class="cave">
+										<img src="images/lift_red.png" width="45" height="40" class = "cave1"/>
+									</div>	
+								</div>																
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/down_green.png" width="20" height="20" class = "img_arrow2"/>				
+									</div>
+									<div class="content" id="f2">25</div>
+									<img src="images/lift_green.png" width="45" height="40" class = "cave2"/>
+								</div>																
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/down_red.png" width="20" height="20" class = "img_arrow3"/>				
+									</div>
+									<div class="content" id="f3">27</div>
+									<img src="images/lift_red.png" width="45" height="40" class = "cave3"/>
+								</div>																
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/up_green.png" width="20" height="20" class = "img_arrow4"/>				
+									</div>
+									<div class="content" id = "f4">23</div>
+									<img src="images/lift_green.png" width="45" height="40" class = "cave4"/>
+								</div>															
+								</li>
+							</ul>	
+							<p class="lift_floor">~19F</p>
+							<ul class = "floor_lower">
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/up_green.png" width="20" height="20" class = "img_arrow4"/>				
+									</div>
+									<div class="content" id="f5">12</div>
+									<img src="images/lift_green.png" width="45" height="40" class = "cave4"/>
+								</div>									
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/down_red.png" width="20" height="20" class = "img_arrow3"/>				
+									</div>
+									<div class="content" id="f6">3</div>
+									<img src="images/lift_red.png" width="45" height="40" class = "cave3"/>
+								</div>																
+								</li>
+								<li class ="repair_lift"><img src="images/repair_lift.png" width="45" height="45"/></li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/up_red.png" width="20" height="20" class = "img_arrow1"/>				
+									</div>
+									<div class="content" id="f7">20</div>
+									<img src="images/lift_red.png" width="45" height="40" class = "cave1"/>
+								</div>															
+								</li>						
+							</ul>
+							<p class="lift_floor">~19F</p>
+							<ul class = "floor_lower">
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/up_red.png" width="20" height="20" class = "img_arrow1"/>				
+									</div>
+									<div class="content" id="f8">3</div>
+									<img src="images/lift_red.png" width="45" height="40" class = "cave1"/>
+								</div>																
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/down_green.png" width="20" height="20" class = "img_arrow2"/>				
+									</div>
+									<div class="content" id="f9">9</div>
+									<img src="images/lift_green.png" width="45" height="40" class = "cave2"/>
+								</div>															
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/down_red.png" width="20" height="20" class = "img_arrow3"/>				
+									</div>
+									<div class="content" id="f10">20</div>
+									<img src="images/lift_red.png" width="45" height="40" class = "cave3"/>
+								</div>																
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/up_green.png" width="20" height="20" class = "img_arrow4"/>				
+									</div>
+									<div class="content" id="f11">14</div>
+									<img src="images/lift_green.png" width="45" height="40" class = "cave4"/>
+								</div>																
+								</li></ul>
+							<p class="lift_floor">~28F</p>
+							<ul class = "cargo_lift">
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/down_green.png" width="20" height="20" class = "img_arrow2"/>				
+									</div>
+									<div class="content" id="f12">6</div>
+									<img src="images/lift_green.png" width="45" height="40" class = "cave2"/>
+								</div>															
+								</li>
+								<li>
+								<div class="container">
+									<div class="director">
+										<img src="images/down_red.png" width="20" height="20" class = "img_arrow3"/>				
+									</div>
+									<div class="content" id="f13">25</div>
+									<img src="images/lift_red.png" width="45" height="40" class = "cave3"/>
+								</div>																
+								</li>
+							</ul>							
+						</div>	
+						<div class="page">
+							<img src="images/lift_page_use.png" width="50" height="50" class = "lf_page"/>
+							<img src="images/wc_page_no.png" width="50" height="50" class = "wc_page"/>
+						</div>			
+					</div>	
+					
+				</div>
+				<div class="swiper-slide">
+					<div class="main_wrap">
+						<div class="setting">
+							<p class="company">OT2</p>
+							<p class="floor">25F</p>
+							<img src="images/female.png" width="30" height="30" class = "setting-sex"/>				
+						</div>
+						<div class="outer-container">
+							<div class="inner-container">
+							<ul class="wc_show">
+								<li class ="wc_floor">25F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc-1"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc-2"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+								</div>															
+							</ul>
+							<ul class="wc_show">
+								<li class ="wc_floor">26F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc2"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc3"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>			
+								</div>															
+							</ul>
+							<ul class="wc_show">
+								<li class ="wc_floor">24F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc1"/></li>
+									<li class ="repair_wc"><img src="images/repair_wc.png" width="42" height="40" class = "wc_maintain"/></li>										
+								</div>															
+							</ul>
+							<ul class="wc_show">
+								<li class ="wc_floor">23F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc1"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>								
+								</div>															
+							</ul>
+							<ul class="wc_show">
+								<li class ="wc_floor">27F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc2"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>											
+								</div>															
+							</ul>
+							<ul class="wc_show">
+								<li class ="wc_floor">22F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc1"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>													
+								</div>															
+							</ul>
+							<ul class="wc_show">
+								<li class ="wc_floor">28F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc2"/></li>													
+								</div>															
+							</ul>
+							<ul class="wc_show">
+								<li class ="wc_floor">21F</li>
+								<div class="wc">
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc2"/></li>
+									<li class ="wc_icon"><img src="images/wc_green.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>
+									<li class ="wc_icon"><img src="images/wc_red.png" width="50" height="45" class = "wc_maintain"/></li>													
+								</div>															
+							</ul>
+						</div>	
+						</div>
+						<div class="page-wc">
+							<img src="images/lift_page_no.png" width="50" height="50" class = "lf_page"/>
+							<img src="images/wc_page_use.png" width="50" height="50" class = "wc_page"/>
+						</div>									
+					</div>				
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	<!-- Initialize Swiper -->
+	  <script>
+
+	    var swiper = new Swiper('.swiper-container', {
+	
+	      pagination: {	
+	        el: '.swiper-pagination'
+	      },
+	
+	    });
+	
+	  </script>
+	</body>
+</html>

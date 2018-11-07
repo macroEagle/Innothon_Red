@@ -26,19 +26,18 @@ public class IBuildingResource {
 		String result = status;
 		return result;
 	}
-
-	@RequestMapping (value = "/toilet/ {number}",method = RequestMethod.GET)
+	@RequestMapping(value = "/toilet/{number}", method = RequestMethod.GET)
 	public String getToiletStatus (@PathVariable (value ="number") String number) {
 		String result;
 		String status;
-		System.out.println("Number " + number + "====toiletoneStatus:" + toiletOneStatus + "===toiletTwoStatus:" + toiletTwoStatus);
+		System.out.println("Number " + number + "==== toilet Status:" + toiletOneStatus + "===toiletTwoStatus:" + toiletTwoStatus);
 
 		if ("1".equals (number)){
 			status = toiletOneStatus;
 		}else if ("2".equals (number)) {
 			status = toiletTwoStatus;
 		}else {
-			status = "0";
+			status = "O";
 		}
 
 		result = status;
@@ -59,14 +58,4 @@ public class IBuildingResource {
 		return result;
 	}
 
-	//obsolet method
-	@PostMapping("/toilet")
-	public Object setStatus(
-		@Valid
-		@RequestBody
-		final Object requestobject) {
-	
-		String result = "toilet status change to" + requestobject.toString();  
-		return result;
-	}
 }

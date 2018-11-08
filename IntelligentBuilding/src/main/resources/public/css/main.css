@@ -150,7 +150,7 @@ body {
 .wc_show{
 	width:17rem;    
 	height:2rem;    
-	margin:2.8rem 0 0 0;
+	margin:2.5rem 0 0 0;
 }
 .wc_show li{
 	list-style-type:none;         
@@ -168,7 +168,7 @@ body {
 	position: absolute;
 	float:left;    
 	margin-right:0.5rem;
-	margin-top: 1rem;
+	margin-top: 1.8rem;
 	color:#19372F;
 	font-family: Arial;
 }
@@ -184,7 +184,8 @@ body {
 	width:1.5rem;    
 	height:2rem;    
 	float:left;    
-	margin-left:2rem;
+	margin-left:2.3rem;
+	margin-top: 0.5rem;
 }
 .setting_lift{
 	margin:15.5rem 0 0 13rem;
@@ -261,10 +262,10 @@ body {
 }
 .count-person{
 	float: left;
-	color:#19372F;	
-	font-size: 25px;
+	color:#cc9a96;	
+	font-size: 35px;
 	font-family: Arial;
-	margin-top: 5rem;
+	margin-top: 4.2rem;
 	margin-left: -9rem;
 }
 .count-desc{
@@ -278,7 +279,7 @@ body {
 	float: left;	
 	margin-left: 2rem;	
 	margin-top: -2.5rem;
-	margin-bottom: -1rem;
+	margin-bottom: -1.5rem;
 }
 .arrow-up{
 	float: left;

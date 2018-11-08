@@ -31,26 +31,26 @@ $(document).ready(function(){
 				if("1"==number.toString()){
 					if("1"==data.toString() && "images/wc_green.png" == $(".wc-1").attr("src")){
 						$('.wc-1')
-							.fadeOut(1000)
+							.fadeOut(500)
 							.queue(function(next){$(this).attr('src','images/wc_red.png');next();$(this).dequeue()})
-							.fadeIn(1000);
+							.fadeIn(500);
 					}else if("0"==data.toString() && "images/wc_red.png" == $(".wc-1").attr("src")){
 						$('.wc-1')
-							.fadeOut(1000)
+							.fadeOut(500)
 							.queue(function(next){$(this).attr('src','images/wc_green.png');next();$(this).dequeue()})
-							.fadeIn(1000);
+							.fadeIn(500);
 					}
 				}else{
 					if("1"==data.toString() && "images/wc_green.png" == $(".wc-2").attr("src")){
 						$('.wc-2')
-							.fadeOut(1000)
+							.fadeOut(500)
 							.queue(function(next){$(this).attr('src','images/wc_red.png');next();$(this).dequeue()})
-							.fadeIn(1000);
+							.fadeIn(500);
 					}else if("0"==data.toString() && "images/wc_red.png" == $(".wc-2").attr("src")){
 						$('.wc-2')
-							.fadeOut(1000)
+							.fadeOut(500)
 							.queue(function(next){$(this).attr('src','images/wc_green.png');next();$(this).dequeue()})
-							.fadeIn(1000);
+							.fadeIn(500);
 					}
 				}
 			},
@@ -251,9 +251,9 @@ $(document).ready(function(){
 		var wc2 = $('.wc2').attr("src");
 		if("images/wc_green.png" == wc1){	
 			$('.wc1')
-				.fadeOut(1000)				
+				.fadeOut(500)				
 				.queue(function(next){$(this).attr('src','images/wc_red.png');next();$(this).dequeue()})
-				.fadeIn(1000);
+				.fadeIn(500);
 			$('.wc_count').html("Two toilets are avaliable") 
 		}else{
 			$('.wc1')

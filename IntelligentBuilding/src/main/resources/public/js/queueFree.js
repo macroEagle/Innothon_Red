@@ -31,34 +31,34 @@ $(document).ready(function(){
 				if("1"==number.toString()){
 					if("1"==data.toString() && "images/wc_green.png" == $(".wc-1").attr("src")){
 						$('.wc-1')
-							.fadeOut(500)
+							.fadeOut(250)
 							.queue(function(next){$(this).attr('src','images/wc_red.png');next();$(this).dequeue()})
-							.fadeIn(500);
+							.fadeIn(250);
 					}else if("0"==data.toString() && "images/wc_red.png" == $(".wc-1").attr("src")){
 						$('.wc-1')
-							.fadeOut(500)
+							.fadeOut(250)
 							.queue(function(next){$(this).attr('src','images/wc_green.png');next();$(this).dequeue()})
-							.fadeIn(500);
+							.fadeIn(250);
 					}
 				}else{
 					if("1"==data.toString() && "images/wc_green.png" == $(".wc-2").attr("src")){
 						$('.wc-2')
-							.fadeOut(500)
+							.fadeOut(250)
 							.queue(function(next){$(this).attr('src','images/wc_red.png');next();$(this).dequeue()})
-							.fadeIn(500);
+							.fadeIn(250);
 					}else if("0"==data.toString() && "images/wc_red.png" == $(".wc-2").attr("src")){
 						$('.wc-2')
-							.fadeOut(500)
+							.fadeOut(250)
 							.queue(function(next){$(this).attr('src','images/wc_green.png');next();$(this).dequeue()})
-							.fadeIn(500);
+							.fadeIn(250);
 					}
 				}
 			},
 			complete:function(data){
 				if("1"==number.toString()){
-					setTimeout(fetchDataToiletOne,1000);
+					setTimeout(fetchDataToiletOne,500);
 				}else{
-					setTimeout(fetchDataToiletTwo,1000);
+					setTimeout(fetchDataToiletTwo,500);
 				}
 			}
 		});
@@ -72,9 +72,9 @@ $(document).ready(function(){
 			success:function(data){
 				if(null != data.toString() && "" != data.toString() && data.toString() != $(".count-person").text() ){
 					$(".count-person")
-						.fadeOut(1000)				
+						.fadeOut(250)				
 						.queue(function(next){$(this).html(data.toString());next();$(this).dequeue()})
-						.fadeIn(1000);
+						.fadeIn(250);
 				}
 			},
 			complete:function(data){

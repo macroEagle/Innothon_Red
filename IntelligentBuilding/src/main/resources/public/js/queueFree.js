@@ -45,15 +45,6 @@ $(document).ready(function(){
 			stop_count:1,
 			stop_max:1
 		},
-		f12:{
-			up:true,
-			floor:3,
-			ow:false,
-			fast_below:1,
-			max:28,
-			stop_count:1,
-			stop_max:1
-		},
 		f13:{
 			up:true,
 			floor:1,
@@ -200,8 +191,8 @@ $(document).ready(function(){
 			}
 			
 		}
-		$('#up_time').html(Math.round(up_time/6)/10);
-		$('#down_time').html(Math.round(down_time/6)/10);
+		$('#up_time').html(Math.round(up_time/60)/1);
+		$('#down_time').html(Math.round(down_time/60)/1);
 	}
 	
 	function countWaitTime(lift_number,for_up)

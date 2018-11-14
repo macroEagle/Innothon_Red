@@ -4,8 +4,6 @@
 	<!--设置视口,解决pc和手机屏幕不匹配问题-->    
 	<meta name="viewport" content="width=device-width,     
 	initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	
 	<head>		
 		<link rel="stylesheet" href="css/swiper.min.css">
@@ -17,7 +15,7 @@
 		<script src="js/queueFree.js"></script>
 	</head>
 	<body>
-		<div class="swiper-container">		
+		<div class="swiper-container" id="scontainer">		
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">	
 					<div class="main_wrap">
@@ -35,55 +33,62 @@
 						</div>
 						<div class="time-container">
 							<img src="images/arrow_up.png" width="23" height="23" class = "arrow-up"/>	
-							<p class="time">5</p>
+							<p class="time" id="up_time">5</p>
 							<p class="min">mins</p>						
 							<p class="arrive">Lift Arriving in</p>
 							<img src="images/arrow_down.png" width="23" height="23" class = "arrow-down"/>
-							<p class="time">3</p>
+							<p class="time" id="down_time">3</p>
 							<p class="min">mins</p>
 						</div>
 						<div class = "lift-container">
-							<p class="lift_floor">21F~</p>
+							<p class="lift_floor">&nbsp;</p>
+							<p class="lift_floor">P.Lift</p>
 							<ul class="floor_higher">
 								<li>
 								<div class="container">
-									<div class="director">
+									<div class="director" id="f1_arrow">
 										<img src="images/up_red.png" width="20" height="20" class = "img_arrow1"/>				
 									</div>
 									<div class="content" id="f1">21</div>
-									<div class="cave">
+									<div class="cave" id="f1_cave">
 										<img src="images/lift_red.png" width="45" height="40" class = "cave1"/>
 									</div>	
 								</div>																
 								</li>
 								<li>
 								<div class="container">
-									<div class="director">
+									<div class="director" id="f2_arrow">
 										<img src="images/down_green.png" width="20" height="20" />
 									</div>
 									<div class="content" id="f2">25</div>
-									<img src="images/lift_green.png" width="45" height="40" >
+									<div class="cave" id="f2_cave">
+										<img src="images/lift_green.png" width="45" height="40" >
+									</div>	
 								</div>																
 								</li>
 								<li>
 								<div class="container">
-									<div class="director">
+									<div class="director" id="f3_arrow">
 										<img src="images/down_red.png" width="20" height="20" />
 									</div>
 									<div class="content" id="f3">27</div>
-									<img src="images/lift_red.png" width="45" height="40" />
+									<div class="cave" id="f3_cave">
+										<img src="images/lift_red.png" width="45" height="40" />
+									</div>
 								</div>																
 								</li>
 								<li>
 								<div class="container">
-									<div class="director">
+									<div class="director" id="f4_arrow">
 										<img src="images/up_green.png" width="20" height="20" />
 									</div>
 									<div class="content" id = "f4">23</div>
-									<img src="images/lift_green.png" width="45" height="40" />
+									<div class="cave" id="f4_cave">
+										<img src="images/lift_green.png" width="45" height="40" />
+									</div>
 								</div>															
 								</li>
-							</ul>	
+							</ul>	<!--
 							<p class="lift_floor">~19F</p>
 							<ul class = "floor_lower">
 								<li>
@@ -152,25 +157,31 @@
 									<div class="content" id="f11">14</div>
 									<img src="images/lift_green.png" width="45" height="40" />
 								</div>																
-								</li></ul>
-							<p class="lift_floor">~28F</p>
+								</li></ul>-->
+							<p class="lift_floor">&nbsp;</p>
+							<p class="lift_floor">Cargo</p>
 							<ul class = "cargo_lift">
 								<li>
 								<div class="container">
-									<div class="director">
+									<div class="director" id="f12_arrow">
 										<img src="images/down_green.png" width="20" height="20" class = "img_arrow2"/>				
 									</div>
 									<div class="content" id="f12">6</div>
+									
+									<div class="cave" id="f12_cave">
 									<img src="images/lift_green.png" width="45" height="40" class = "cave2"/>
+									</div>
 								</div>															
 								</li>
 								<li>
 								<div class="container">
-									<div class="director">
+									<div class="director" id="f13_arrow">
 										<img src="images/down_red.png" width="20" height="20" />
 									</div>
 									<div class="content" id="f13">25</div>
-									<img src="images/lift_red.png" width="45" height="40" />
+									<div class="cave" id="f13_cave">
+										<img src="images/lift_red.png" width="45" height="40" />
+									</div>
 								</div>																
 								</li>
 							</ul>							

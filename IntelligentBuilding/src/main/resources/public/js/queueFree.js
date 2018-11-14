@@ -5,11 +5,76 @@ $(document).ready(function(){
 		alwaysVisible: true
 	});
 	
-	setInterval(function working(){ 
-		changeLiftNumber();
-		switchLiftImage();
-		//switchWcImage();
-	},10000);
+	var fast_lift_time = 8;
+	var slow_lift_time = 20;
+	
+	var lift_status = {
+		f1:{
+			up:false,
+			floor:21,
+			ow:true,
+			fast_below:21,
+			max:28,
+			stop_count:1,
+			stop_max:1
+		},
+		f2:{
+			up:false,
+			floor:24,
+			ow:false,
+			fast_below:21,
+			max:28,
+			stop_count:1,
+			stop_max:1
+		},
+		f3:{
+			up:false,
+			floor:20,
+			ow:true,
+			fast_below:21,
+			max:28,
+			stop_count:1,
+			stop_max:1
+		},
+		f4:{
+			up:false,
+			floor:21,
+			ow:false,
+			fast_below:21,
+			max:28,
+			stop_count:1,
+			stop_max:1
+		},
+		f12:{
+			up:true,
+			floor:3,
+			ow:false,
+			fast_below:1,
+			max:28,
+			stop_count:1,
+			stop_max:1
+		},
+		f13:{
+			up:true,
+			floor:1,
+			ow:false,
+			fast_below:1,
+			max:28,
+			stop_count:1,
+			stop_max:1
+		}
+		
+	};
+	lift();
+	$('#scontainer').click( 
+	function(){
+		setInterval(function working(){ 
+			//changeLiftNumber();
+			//switchLiftImage();
+			//switchWcImage();
+			lift();
+		},1000);
+	});
 	
 	setTimeout(fetchDataToiletOne,2000);
 	setTimeout(fetchDataToiletTwo,2000);
@@ -81,6 +146,200 @@ $(document).ready(function(){
 				setTimeout(fetchLDataAjax,1000);
 			}
 		});
+	}
+	
+	function lift(){
+		
+		up_time = 999999999;
+		down_time = 999999999;
+		for(lift_number in lift_status)
+		{	
+			//$('#'+lift_number).fadeOut(250);
+			$('#'+lift_number).html(parseInt(changeLiftStatus(lift_number),10));
+			
+			lift_img = '';
+			arrow_img = '';
+			
+			if(lift_status[lift_number].ow)
+			{
+				lift_img = "images/lift_red.png";
+				if(lift_status[lift_number].up)
+				{
+					arrow_img = 'images/up_red.png';
+				}
+				else
+				{
+					arrow_img = 'images/down_red.png';
+				}
+			}
+			else
+			{
+				lift_img = "images/lift_green.png";
+				if(lift_status[lift_number].up)
+				{
+					arrow_img = 'images/up_green.png';
+				}
+				else
+				{
+					arrow_img = 'images/down_green.png';
+				}
+			}
+			
+			$('#'+lift_number+"_arrow").children("img").attr('src',arrow_img);
+			$('#'+lift_number+"_cave").children("img").attr('src',lift_img);
+			count_up_time = countWaitTime(lift_number, true);
+			count_down_time = countWaitTime(lift_number, false);
+			
+			if(count_up_time < up_time)
+			{
+				up_time = count_up_time;
+			}
+			if(count_down_time < down_time)
+			{
+				down_time = count_down_time;
+			}
+			
+		}
+		$('#up_time').html(Math.round(up_time/6)/10);
+		$('#down_time').html(Math.round(down_time/6)/10);
+	}
+	
+	function countWaitTime(lift_number,for_up)
+	{
+		current_floor = 25;
+		estimated_time = 0;
+		if(lift_status[lift_number].up == for_up)
+		{
+			if(lift_status[lift_number].floor == current_floor)
+			{
+				estimated_time = 0;
+			}
+			else
+			{
+				if(for_up)
+				{
+					if(lift_status[lift_number].floor < current_floor)
+					{
+						fast_floor = lift_status[lift_number].fast_below - lift_status[lift_number].floor;
+						if(fast_floor>0)
+						{
+							estimated_time += fast_floor * fast_lift_time;
+						}
+						slow_floor = current_floor - lift_status[lift_number].floor;
+						estimated_time += slow_floor * slow_lift_time;
+					}
+					else
+					{
+						slow_floor = (lift_status[lift_number].max - lift_status[lift_number].floor) + (lift_status[lift_number].max - lift_status[lift_number].fast_below) + (current_floor - lift_status[lift_number].fast_below);
+						estimated_time += slow_floor * slow_lift_time;
+						fast_floor = lift_status[lift_number].fast_below * 2;
+						estimated_time += fast_floor * fast_lift_time;
+					}
+				}
+				else
+				{
+					if(lift_status[lift_number].floor > current_floor)
+					{
+						slow_floor = lift_status[lift_number].floor - current_floor;
+						estimated_time += slow_floor * slow_lift_time;
+					}
+					else
+					{
+						slow_floor = (lift_status[lift_number].floor - lift_status[lift_number].fast_below) + (lift_status[lift_number].max - lift_status[lift_number].fast_below) + (lift_status[lift_number].max - current_floor);
+						
+						fast_floor = lift_status[lift_number].fast_below*2;		
+						
+						if(lift_status[lift_number].floor < lift_status[lift_number].fast_below)
+						{
+							slow_floor = (lift_status[lift_number].max - lift_status[lift_number].fast_below) + (lift_status[lift_number].max - current_floor);
+							fast_floor = lift_status[lift_number].fast_below + lift_status[lift_number].floor;
+						}
+						estimated_time += slow_floor * slow_lift_time;
+						estimated_time += fast_floor * fast_lift_time;
+					}
+				}
+			}
+		}
+		else
+		{
+			if(for_up)
+			{
+				slow_floor = (lift_status[lift_number].floor - lift_status[lift_number].fast_below) + (current_floor - lift_status[lift_number].fast_below);
+				
+				fast_floor = lift_status[lift_number].fast_below*2;		
+				
+				if(lift_status[lift_number].floor < lift_status[lift_number].fast_below)
+				{
+					slow_floor = (current_floor - lift_status[lift_number].fast_below);
+					fast_floor = lift_status[lift_number].fast_below + lift_status[lift_number].floor;
+				}
+				estimated_time += slow_floor * slow_lift_time;
+				estimated_time += fast_floor * fast_lift_time;
+			}
+			else
+			{
+				slow_floor = (lift_status[lift_number].max - lift_status[lift_number].floor)+(lift_status[lift_number].max - current_floor);
+				fast_floor = 0;		
+				
+				if(lift_status[lift_number].floor < lift_status[lift_number].fast_below)
+				{
+					slow_floor = (lift_status[lift_number].max - lift_status[lift_number].fast_below)+(lift_status[lift_number].max - current_floor);
+					fast_floor = lift_status[lift_number].fast_below - lift_status[lift_number].floor;
+				}
+				estimated_time += slow_floor * slow_lift_time;
+				estimated_time += fast_floor * fast_lift_time;
+			}
+		}
+		return estimated_time;
+	}
+	
+	function changeLiftStatus(lift_number)
+	{
+		floor = lift_status[lift_number].floor;
+		lift_status[lift_number].stop_count++;
+		if(lift_status[lift_number].stop_count>lift_status[lift_number].stop_max)
+		{
+			lift_status[lift_number].stop_count = 1;
+			if(floor >=lift_status[lift_number].fast_below)
+			{
+				lift_status[lift_number].stop_max = Math.random()*5;
+				/*if(lift_status[lift_number].stop_max > 7)
+				{
+					lift_status[lift_number].ow = true;
+				}
+				else
+				{
+					lift_status[lift_number].ow = false;
+				}*/
+			}
+			else
+			{
+				lift_status[lift_number].stop_max = 2;
+			}
+			if(lift_status[lift_number].up)
+			{
+				floor++;
+			}
+			else
+			{
+				floor--;
+			}
+			
+			if(floor>lift_status[lift_number].max)
+			{
+				lift_status[lift_number].up = false;
+				floor = lift_status[lift_number].floor -1;
+			}
+			if(floor < 1)
+			{
+				lift_status[lift_number].up = true;
+				floor = 1;
+			}
+			
+			lift_status[lift_number].floor = floor;
+		}
+		
+		return floor;
 	}
 	
 	function changeLiftNumber(){

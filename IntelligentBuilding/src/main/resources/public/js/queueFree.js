@@ -5,13 +5,13 @@ $(document).ready(function(){
 		alwaysVisible: true
 	});
 	
-	var fast_lift_time = 8;
-	var slow_lift_time = 20;
+	var fast_lift_time = 12;
+	var slow_lift_time = 15;
 	
 	var lift_status = {
 		f1:{
 			up:false,
-			floor:21,
+			floor:23,
 			ow:true,
 			fast_below:21,
 			max:28,
@@ -36,11 +36,11 @@ $(document).ready(function(){
 			stop_count:1,
 			stop_max:1
 		},
-		f4:{
-			up:false,
-			floor:21,
+		f12:{
+			up:true,
+			floor:3,
 			ow:false,
-			fast_below:21,
+			fast_below:1,
 			max:28,
 			stop_count:1,
 			stop_max:1

@@ -128,15 +128,25 @@ body {
 	margin-left: 1rem;
 	margin-right: 0.5rem;
 	color:#19372F;
-	margin-top: 1.8rem;
+	margin-top: 2.6rem;
 	font-family: Arial;
+	font-size: 20px;
+}
+.lift_floor_c{
+	float: left;
+	margin-left: -15.8rem;
+	color:#19372F;
+	margin-top: 8.5rem;
+	font-family: Arial;
+	font-size: 20px;
 }
 .floor_higher{    
 	width:17rem;    
 	height:0.1rem;    
-	margin:0 0 0 0;} 
+} 
 .floor_higher ul{
 	width:8.5rem;
+	
 }
 .floor_higher li{
 	list-style-type:none;         
@@ -146,6 +156,13 @@ body {
 }
 .cargo_lift li{
 	list-style-type:none;         
+}
+.cargo_lift{
+	float: left;
+	width:17rem;    
+	height:0.1rem;    
+	margin-top: -5.5rem;
+	margin-left: 0.8rem;
 }
 .wc_show{
 	width:17rem;    
@@ -178,7 +195,7 @@ body {
 	height:3.4rem;    
 	float:left;    
 	margin-right:1.5rem;
-	margin-top: 0.8rem;
+	margin-top: 1.5rem;
 } 
 .repair_wc{
 	width:1.5rem;    
@@ -198,14 +215,15 @@ body {
 	width:1.5rem;    
 	height:4.1rem;    
 	float:left;    
-	margin-right:1.7rem;
+	margin-right:2rem;
 	margin-bottom: 0.5rem;
 }
 .content {
 	float: right; 
-	width: 25%;
+	width: 5%;
 	color:#19372F;
 	font-family: Arial;
+	font-size: 20px;
 } 
 .director {float: left; width: 50%;}
 .outer-container{
@@ -279,7 +297,6 @@ body {
 	float: left;	
 	margin-left: 2rem;	
 	margin-top: -2.5rem;
-	margin-bottom: -1.5rem;
 }
 .arrow-up{
 	float: left;
@@ -327,8 +344,8 @@ body {
 }
 .page{
 	float: left;
-	margin-top: 4.8rem;
-	margin-left: -1.5rem;
+	margin-top: 5.7rem;
+	margin-left: 8.5rem;
 }
 .page-wc{
 	float:left;

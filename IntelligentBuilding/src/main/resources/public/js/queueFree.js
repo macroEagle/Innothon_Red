@@ -191,6 +191,8 @@ $(document).ready(function(){
 			}
 			
 		}
+		if(up_time/60>=10)up_time=540;
+		if(down_time/60>=10)down_time=540;
 		$('#up_time').html(Math.round(up_time/60)/1);
 		$('#down_time').html(Math.round(down_time/60)/1);
 	}

@@ -115,7 +115,7 @@ body {
 	top: 0;    
 	bottom: 0; 
 	background: url('../images/bg.jpg') no-repeat;
-	background-size: 22.5rem 35rem;
+	background-size: 22.5rem 40rem;
 	margin: 0 auto 0;
 } 
 .main_container{
@@ -166,8 +166,8 @@ body {
 }
 .wc_show{
 	width:17rem;    
-	height:2rem;    
-	margin:2.5rem 0 0 0;
+	height:4rem;    
+	margin:0 0 0 0;
 }
 .wc_show li{
 	list-style-type:none;         
@@ -185,7 +185,7 @@ body {
 	position: absolute;
 	float:left;    
 	margin-right:0.5rem;
-	margin-top: 1.8rem;
+	margin-top: 1rem;
 	color:#19372F;
 	font-family: Arial;
 }
@@ -236,7 +236,6 @@ body {
 .inner-container{
 	position: absolute;
 	left: 0;
-	top: -40px;
 	right: -17px;
 	overflow-x: hidden;
 	overflow-y: scroll;	
@@ -283,7 +282,7 @@ body {
 	color:#cc9a96;	
 	font-size: 35px;
 	font-family: Arial;
-	margin-top: 4.2rem;
+	margin-top: 5.2rem;
 	margin-left: -9rem;
 }
 .count-desc{
@@ -297,6 +296,7 @@ body {
 	float: left;	
 	margin-left: 2rem;	
 	margin-top: -2.5rem;
+	margin-bottom:2rem;
 }
 .arrow-up{
 	float: left;
@@ -344,12 +344,12 @@ body {
 }
 .page{
 	float: left;
-	margin-top: 5.7rem;
+	margin-top: 7.2rem;
 	margin-left: 8.5rem;
 }
 .page-wc{
 	float:left;
-	margin-top:30rem;
+	margin-top:34.5rem;
 	margin-left: -12rem;
 }
 .T10{
